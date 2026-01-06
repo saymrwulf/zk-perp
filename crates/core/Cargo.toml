@@ -1,0 +1,22 @@
+[package]
+name = "zk-perp-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+bincode = { workspace = true }
+thiserror = { workspace = true }
+light-poseidon = { workspace = true }
+sha2 = { workspace = true }
+ark-bn254 = { workspace = true }
+ark-ff = { workspace = true }
+ed25519-dalek = { workspace = true }
+rand = { workspace = true }
+
+[dev-dependencies]
+
+[features]
+default = ["std"]
+std = []

@@ -1,0 +1,26 @@
+[package]
+name = "zk-perp-host"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+zk-perp-core = { workspace = true }
+zk-perp-methods = { path = "../methods" }
+serde = { workspace = true }
+bincode = { workspace = true }
+thiserror = { workspace = true }
+
+# RISC Zero
+risc0-zkvm = "3.0"
+
+[features]
+default = ["risc0"]
+# Use mock prover for faster development (no actual ZK proofs)
+mock = []
+# Enable real RISC Zero proving
+risc0 = []
+
+[dev-dependencies]
+zk-perp-state = { path = "../crates/state" }
+zk-perp-da = { path = "../crates/da" }

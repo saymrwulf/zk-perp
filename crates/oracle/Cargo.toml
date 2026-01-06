@@ -1,0 +1,10 @@
+[package]
+name = "zk-perp-oracle"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+zk-perp-core = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }

@@ -1,0 +1,12 @@
+[package]
+name = "zk-perp-da"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+zk-perp-core = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+thiserror = { workspace = true }

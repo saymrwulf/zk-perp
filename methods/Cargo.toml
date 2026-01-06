@@ -1,0 +1,18 @@
+[package]
+name = "zk-perp-methods"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+
+[build-dependencies]
+risc0-build = "3.0"
+
+[package.metadata.risc0]
+methods = ["guest"]
+
+[features]
+default = ["risc0"]
+risc0 = []

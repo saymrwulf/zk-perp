@@ -1,0 +1,20 @@
+[package]
+name = "zk-perp-sequencer"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+zk-perp-core = { workspace = true }
+zk-perp-state = { path = "../crates/state" }
+zk-perp-oracle = { path = "../crates/oracle" }
+zk-perp-da = { path = "../crates/da" }
+zk-perp-host = { path = "../host" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+sha2 = { workspace = true }
+tokio = { workspace = true }
+axum = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
